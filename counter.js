@@ -21,10 +21,10 @@ function counterReducer(state={ count: 0 }, action) {
   }
 }
 
+
+//STORE
 const store = Redux.createStore(counterReducer)
-
 console.log(store);
-
 function render() {
   console.log('STATE: changed to ', store.getState().count);
   console.log('SUBSCRIBER UPDATED: updating render');
